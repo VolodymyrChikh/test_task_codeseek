@@ -51,7 +51,7 @@ public class PlayerController {
         playerService.delete(id);
     }
 
-    @PostMapping("/{playerId}/transfer/{fromTeamId}/to/{toTeamId}")
+    @PostMapping("/{playerId}/transfer-from/{fromTeamId}/to/{toTeamId}")
     public void transferPlayer(@PathVariable Long playerId, @PathVariable Long fromTeamId, @PathVariable Long toTeamId) {
         playerService.buyPlayer(playerId, fromTeamId, toTeamId);
     }
