@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "63c08628-6bec-4b78-81a9-8b111425efe8",
+		"name": "Football-manager-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25809616"
+	},
+	"item": [
+		{
+			"name": "Get all players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/players"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all teams player1 is in",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/players/1/teams"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all teams player2 is in",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/players/2/teams"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/teams"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all players that team1 has",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/teams/1/players"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all players that team2 has",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/teams/2/players"
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/players/1/transfer-from/1/to/2"
+			},
+			"response": []
+		}
+	]
+}
